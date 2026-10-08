@@ -1,0 +1,36 @@
+# Virtual environments, secrets and editor files
+.venv/
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Downloaded corpus, derived Reddit text and original train/dev/test splits
+/data/*
+!/data/.gitkeep
+!/data/README.md
+
+# Large or generated artifacts not required for the reference results
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.safetensors
+outputs/*.tmp
+
+# Keep the three numeric feature tables as a small reference snapshot.
+# Historical working notes/scripts are not distributed.
+
+# Re-generated evaluations (reference snapshots are tracked)
+/results/metrics.json
+/results/ablation.csv
+/results/rf_importances.csv

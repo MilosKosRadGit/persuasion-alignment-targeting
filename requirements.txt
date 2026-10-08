@@ -1,0 +1,5 @@
+# Entire workflow, including CMV acquisition and NLP feature extraction.
+-r requirements-evaluation.txt
+convokit>=3.0,<5
+spacy>=3.7,<4
+sentence-transformers>=3.0,<6
